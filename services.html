@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Velmont Studio</title>
+    <meta name="description" content="Explore Velmont Studio services for Roblox game design, 3D environments, and Luau architecture.">
+    <meta property="og:title" content="Services | Velmont Studio">
+    <meta property="og:description" content="Explore Velmont Studio services for Roblox game design, 3D environments, and Luau architecture.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">Velmont</a>
+            <nav class="nav-links" id="primary-navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container page-intro">
+            <div class="section-header reveal">
+                <span class="marker">+ SPECIFICATIONS</span>
+                <h1 class="page-title">Engine Capabilities</h1>
+                <p style="font-size: 20px; color: var(--ink-secondary); max-width: 600px;">
+                    We don't do generic builds. Every system, mesh, and line of Luau is engineered for maximum throughput, low memory footprint, and high retention.
+                </p>
+            </div>
+        </section>
+
+        <section class="container section-bottom">
+            <div class="services-staggered">
+
+                <!-- Service 01 -->
+                <div class="service-block reveal">
+                    <div class="service-index">01</div>
+                    <div class="service-title">
+                        <h3>Game Design & Economy</h3>
+                    </div>
+                    <div class="service-desc">
+                        <p>Mathematical progression models, retention loops, and balanced economies built on data rather than intuition.</p>
+                        <div style="background: var(--bg-surface); padding: var(--s-6); border: 1px solid var(--border); margin-top: var(--s-6);">
+                            <span class="text-mono" style="display: block; margin-bottom: var(--s-2); font-weight: bold;">-- Core Loop Specification</span>
+                            <ul style="font-size: 14px; color: var(--ink-secondary); display: grid; gap: var(--s-2); padding-left: var(--s-4);">
+                                <li>Session length optimization and drop-off analytics</li>
+                                <li>Non-inflationary multi-currency sinks</li>
+                                <li>Dynamic reward scheduling and engagement triggers</li>
+                                <li>Comprehensive UX wireframes and interface mapping</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 02 -->
+                <div class="service-block reveal">
+                    <div class="service-index">02</div>
+                    <div class="service-title">
+                        <h3>3D Development & Environments</h3>
+                    </div>
+                    <div class="service-desc">
+                        <p>Clean geometry, strictly managed draw calls, and custom lighting setups designed around Roblox engine limits.</p>
+                        <div style="background: var(--bg-surface); padding: var(--s-6); border: 1px solid var(--border); margin-top: var(--s-6);">
+                            <span class="text-mono" style="display: block; margin-bottom: var(--s-2); font-weight: bold;">-- Asset Pipeline Standards</span>
+                            <ul style="font-size: 14px; color: var(--ink-secondary); display: grid; gap: var(--s-2); padding-left: var(--s-4);">
+                                <li>Modular asset kits for maximum instancing efficiency</li>
+                                <li>SurfaceAppearance PBR baking and LOD management</li>
+                                <li>Future lighting integration with controlled shadow-casters</li>
+                                <li>Strict collision-mesh isolation for server performance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 03 -->
+                <div class="service-block reveal">
+                    <div class="service-index">03</div>
+                    <div class="service-title">
+                        <h3>Roblox Luau Architecture</h3>
+                    </div>
+                    <div class="service-desc">
+                        <p>Strictly typed, decoupled network architecture with packet compression and bulletproof replication patterns.</p>
+                        <div style="background: var(--bg-surface); padding: var(--s-6); border: 1px solid var(--border); margin-top: var(--s-6);">
+                            <span class="text-mono" style="display: block; margin-bottom: var(--s-2); font-weight: bold;">-- Technical Implementation</span>
+                            <div class="code-snippet" style="font-family: var(--font-mono); font-size: 12px; color: #625d56; margin-top: var(--s-3); line-height: 1.5;">
+local Net = require(ReplicatedStorage.Packages.ByteNet)
+
+local Packet = Net.definePacket({
+    value = Net.buff,
+})
+
+function NetworkService:Dispatch(player: Player, payload: buffer)
+    Packet.sendTo(payload, player)
+end</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: var(--s-6);">Velmont</div>
+                    <p class="text-muted" style="font-size: 13px;">Architecture / Systems / Design</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Direct</h4>
+                    <ul>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Status</h4>
+                    <p class="text-mono">● Available for Hire</p>
+                </div>
+            </div>
+            <div style="margin-top: var(--s-16); border-top: 1px solid var(--border); padding-top: var(--s-8);">
+                <p class="text-muted" style="font-size: 11px;">© 2026 VELMONT STUDIO. BUILT WITH UNCOMPROMISING PRECISION.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

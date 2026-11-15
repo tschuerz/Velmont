@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Velmont Studio</title>
+    <meta name="description" content="Learn about Velmont Studio and its approach to Roblox systems, engineering, and design.">
+    <meta property="og:title" content="About | Velmont Studio">
+    <meta property="og:description" content="Learn about Velmont Studio and its approach to Roblox systems, engineering, and design.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">Velmont</a>
+            <nav class="nav-links" id="primary-navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html" class="active">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container page-intro">
+            <div class="section-header reveal">
+                <span class="marker">+ IDENTITY</span>
+                <h1 class="page-title">The Studio</h1>
+            </div>
+        </section>
+
+        <section class="container section-bottom">
+            <div class="about-grid reveal">
+                <div>
+                    <span class="text-upper text-mono" style="display: block; margin-bottom: var(--s-4);">01 // Bio</span>
+                    <p style="font-size: 20px; line-height: 1.4; color: var(--ink-primary); margin-bottom: var(--s-8);">
+                        Velmont Studio builds Roblox experiences with a focus on clear systems, considered environments, and dependable performance.
+                    </p>
+                    <p style="font-size: 16px; line-height: 1.6; color: var(--ink-secondary);">
+                        The work spans game systems, 3D environments, and Luau architecture. Each feature is designed to serve the experience, run well across devices, and remain predictable as a project grows.
+                    </p>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: var(--s-10); border: 1px solid var(--border);">
+                    <span class="text-upper text-mono" style="display: block; margin-bottom: var(--s-6);">02 // Operating Principles</span>
+                    
+                    <div style="display: grid; gap: var(--s-8);">
+                        <div>
+                            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: var(--s-2);">01. No Decorative Slop</h4>
+                            <p style="font-size: 14px; color: var(--ink-secondary);">Every particle, mesh polygon, and network remote must have an architectural purpose. Zero visual fluff.</p>
+                        </div>
+                        <div>
+                            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: var(--s-2);">02. Strict Memory Profiling</h4>
+                            <p style="font-size: 14px; color: var(--ink-secondary);">Roblox runs on mobile phones and high-end rigs alike. We optimize for the lowest-common-denominator device.</p>
+                        </div>
+                        <div>
+                            <h4 style="font-family: var(--font-display); font-size: 18px; margin-bottom: var(--s-2);">03. Deterministic Code</h4>
+                            <p style="font-size: 14px; color: var(--ink-secondary);">Luau codebases designed with strict type systems, predictable event dispatchers, and state safety.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: var(--s-6);">Velmont</div>
+                    <p class="text-muted" style="font-size: 13px;">Architecture / Systems / Design</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Direct</h4>
+                    <ul>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Status</h4>
+                    <p class="text-mono">● Available for Hire</p>
+                </div>
+            </div>
+            <div style="margin-top: var(--s-16); border-top: 1px solid var(--border); padding-top: var(--s-8);">
+                <p class="text-muted" style="font-size: 11px;">© 2026 VELMONT STUDIO. BUILT WITH UNCOMPROMISING PRECISION.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Velmont Studio</title>
+    <meta name="description" content="Contact Velmont Studio about engineering and development for your Roblox project.">
+    <meta property="og:title" content="Contact | Velmont Studio">
+    <meta property="og:description" content="Contact Velmont Studio about engineering and development for your Roblox project.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">Velmont</a>
+            <nav class="nav-links" id="primary-navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container page-intro">
+            <div class="section-header reveal">
+                <span class="marker">+ TRANSMISSION</span>
+                <h1 class="page-title">Initiate Contract</h1>
+                <p style="font-size: 20px; color: var(--ink-secondary); max-width: 600px;">
+                    Have an ambitious Roblox project that requires serious engineering? Reach out directly via the form below or at <a href="mailto:velmont-studios@proton.me" style="text-decoration: underline; color: var(--ink-primary); font-weight: 500;">velmont-studios@proton.me</a>.
+                </p>
+            </div>
+        </section>
+
+        <section class="container section-bottom">
+            <div style="max-width: 800px;" class="reveal">
+                <form id="contact-form" action="https://formspree.io/f/[FORM_ID]" method="POST" class="contact-form">
+                    <div class="contact-fields">
+                        <div style="display: grid; gap: var(--s-2);">
+                            <label for="name" class="text-upper text-mono">01 // Name or Studio</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter name" style="border-radius: 0; background: var(--bg-surface); border: 1px solid var(--border); padding: var(--s-4); font-size: 16px; color: var(--ink-primary);">
+                        </div>
+                        <div style="display: grid; gap: var(--s-2);">
+                            <label for="email" class="text-upper text-mono">02 // Direct Email</label>
+                            <input type="email" id="email" name="email" required placeholder="name@domain.com" style="border-radius: 0; background: var(--bg-surface); border: 1px solid var(--border); padding: var(--s-4); font-size: 16px; color: var(--ink-primary);">
+                        </div>
+                    </div>
+
+                    <div style="display: grid; gap: var(--s-2);">
+                        <label for="scope" class="text-upper text-mono">03 // Project Scope</label>
+                        <input type="text" id="scope" name="scope" placeholder="e.g. Full Game Architecture, Custom Luau Framework, 3D Environment Kit" style="border-radius: 0; background: var(--bg-surface); border: 1px solid var(--border); padding: var(--s-4); font-size: 16px; color: var(--ink-primary);">
+                    </div>
+
+                    <div style="display: grid; gap: var(--s-2);">
+                        <label for="details" class="text-upper text-mono">04 // Technical Specifications & Goals</label>
+                        <textarea id="details" name="details" required rows="6" placeholder="Describe scope, timeline, target concurrent players (CCU), and technical challenges..." style="border-radius: 0; background: var(--bg-surface); border: 1px solid var(--border); padding: var(--s-4); font-size: 16px; color: var(--ink-primary); font-family: inherit; resize: vertical;"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="button" style="padding: var(--s-5) var(--s-12); font-size: 15px;">Transmit Inquiry</button>
+                    </div>
+                </form>
+
+                <div id="form-feedback" class="form-feedback" role="status" aria-live="polite" hidden></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: var(--s-6);">Velmont</div>
+                    <p class="text-muted" style="font-size: 13px;">Architecture / Systems / Design</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Direct</h4>
+                    <ul>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Status</h4>
+                    <p class="text-mono">● Available for Hire</p>
+                </div>
+            </div>
+            <div style="margin-top: var(--s-16); border-top: 1px solid var(--border); padding-top: var(--s-8);">
+                <p class="text-muted" style="font-size: 11px;">© 2026 VELMONT STUDIO. BUILT WITH UNCOMPROMISING PRECISION.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

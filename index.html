@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velmont | Brutalist Engineer</title>
+    <meta name="description" content="Velmont Studio builds high-performance Roblox games through 3D development, systems architecture, and Luau optimization.">
+    <meta property="og:title" content="Velmont | Brutalist Engineer">
+    <meta property="og:description" content="Velmont Studio builds high-performance Roblox games through 3D development, systems architecture, and Luau optimization.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-inner">
+            <a href="index.html" class="logo">Velmont</a>
+            <nav class="nav-links" id="primary-navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <button class="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-navigation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero hero-section container">
+            <div class="hero-content reveal">
+                <span class="text-upper text-mono" style="margin-bottom: var(--s-4); display: block;">Studio / 01</span>
+                <h1>Architecting Experiences</h1>
+                <p>Brutalist engineering for high-performance Roblox games. 3D development, system architecture, and Luau optimization.</p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="button">Start a Project</a>
+                </div>
+            </div>
+            <div class="hero-visual reveal" style="transition-delay: 200ms;">
+                <div class="code-snippet">
+-- Optimized Task Scheduler
+local Scheduler = {}
+function Scheduler:Init()
+    task.spawn(function()
+        while true do
+            local dt = task.wait()
+            self:Update(dt)
+        end
+    end)
+end
+
+function Scheduler:Update(dt)
+    -- System processing logic
+end
+return Scheduler</div>
+            </div>
+        </section>
+
+        <section class="container section-space">
+            <div class="section-header reveal">
+                <span class="marker">+ 02</span>
+                <h2 style="font-size: 64px;">Core Systems</h2>
+            </div>
+
+            <div class="services-staggered">
+                <div class="service-block reveal">
+                    <div class="service-index">01</div>
+                    <div class="service-title"><h3>Game Design</h3></div>
+                    <div class="service-desc">
+                        <p>Architecture of core loops and progression systems. Data-driven mechanics for retention and scalability.</p>
+                        <a href="services.html" class="text-mono" style="text-decoration: underline;">Explore Systems</a>
+                    </div>
+                </div>
+
+                <div class="service-block reveal" style="transition-delay: 100ms;">
+                    <div class="service-index">02</div>
+                    <div class="service-title"><h3>3D Dev</h3></div>
+                    <div class="service-desc">
+                        <p>Optimized environment art and modular asset pipelines. Built for high-fidelity visual fidelity on all platforms.</p>
+                        <a href="services.html" class="text-mono" style="text-decoration: underline;">Explore Visuals</a>
+                    </div>
+                </div>
+
+                <div class="service-block reveal" style="transition-delay: 200ms;">
+                    <div class="service-index">03</div>
+                    <div class="service-title"><h3>Scripting</h3></div>
+                    <div class="service-desc">
+                        <p>Luau optimization, netcode architecture, and memory management. High-performance systems for large-scale games.</p>
+                        <a href="services.html" class="text-mono" style="text-decoration: underline;">Explore Engine</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-bottom">
+            <div class="section-header reveal">
+                <span class="marker">+ 03</span>
+                <h2 style="font-size: 64px;">Selected Outputs</h2>
+            </div>
+            
+            <div class="portfolio-brutalist reveal">
+                <div class="portfolio-item">
+                    <div class="portfolio-info">
+                        <span class="text-mono">Project / 01</span>
+                        <h3>System Alpha</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-info">
+                        <span class="text-mono">Project / 02</span>
+                        <h3>Environment Beta</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-info">
+                        <span class="text-mono">Project / 03</span>
+                        <h3>Core Mechanics</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-info">
+                        <span class="text-mono">Project / 04</span>
+                        <h3>World Engine</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: var(--s-6);">Velmont</div>
+                    <p class="text-muted" style="font-size: 13px;">Architecture / Systems / Design</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Direct</h4>
+                    <ul>
+                        <li><a href="index.html">Index</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Status</h4>
+                    <p class="text-mono">● Available for Hire</p>
+                </div>
+            </div>
+            <div style="margin-top: var(--s-16); border-top: 1px solid var(--border); padding-top: var(--s-8);">
+                <p class="text-muted" style="font-size: 11px;">© 2026 VELMONT STUDIO. BUILT WITH UNCOMPROMISING PRECISION.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
